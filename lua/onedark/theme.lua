@@ -162,10 +162,10 @@ function M.setup(config)
     LspDiagnosticsDefaultInformation = { fg = c.info }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
     LspDiagnosticsDefaultHint = { fg = c.hint }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
 
-    LspDiagnosticsVirtualTextError = { bg = util.darken(c.error, 0.1), fg = c.error }, -- Used for "Error" diagnostic virtual text
-    LspDiagnosticsVirtualTextWarning = { bg = util.darken(c.warning, 0.1), fg = c.warning }, -- Used for "Warning" diagnostic virtual text
-    LspDiagnosticsVirtualTextInformation = { bg = util.darken(c.info, 0.1), fg = c.info }, -- Used for "Information" diagnostic virtual text
-    LspDiagnosticsVirtualTextHint = { bg = util.darken(c.hint, 0.1), fg = c.hint }, -- Used for "Hint" diagnostic virtual text
+    LspDiagnosticsVirtualTextError = { fg = c.error }, -- Used for "Error" diagnostic virtual text
+    LspDiagnosticsVirtualTextWarning = { fg = c.warning }, -- Used for "Warning" diagnostic virtual text
+    LspDiagnosticsVirtualTextInformation = { fg = c.info }, -- Used for "Information" diagnostic virtual text
+    LspDiagnosticsVirtualTextHint = { fg = c.hint }, -- Used for "Hint" diagnostic virtual text
 
     LspDiagnosticsUnderlineError = { style = "undercurl", sp = c.error }, -- Used to underline "Error" diagnostics
     LspDiagnosticsUnderlineWarning = { style = "undercurl", sp = c.warning }, -- Used to underline "Warning" diagnostics
